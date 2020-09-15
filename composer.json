@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
         "sensiolabs/security-checker": "^6.0",
         "sylius/sylius": "~1.8.0",
         "symfony/dotenv": "^4.4",
