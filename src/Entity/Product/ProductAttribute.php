@@ -14,6 +14,21 @@ use Sylius\Component\Product\Model\ProductAttribute as BaseProductAttribute;
  */
 class ProductAttribute extends BaseProductAttribute
 {
+    /**
+     * @ORM\Column(type="string", options={"default": "terms"})
+     */
+    protected string $facetType;
+
+    public function getFacetType(): string
+    {
+        return $this->facetType;
+    }
+
+    public function setFacetType(string $facetType): void
+    {
+        $this->facetType = $facetType;
+    }
+
     protected function createTranslation(): AttributeTranslationInterface
     {
         return new ProductAttributeTranslation();
